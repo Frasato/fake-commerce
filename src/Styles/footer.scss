@@ -1,0 +1,38 @@
+$green_color: #044040;
+$red_color: #D92525;
+$white_color: #F2F2F2;
+
+footer{
+    background-color: $green_color;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 0 70px;
+    color: white;
+    .navigation-footer{
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 1.5em;
+            font-weight: 700;
+            border-bottom: 2px solid $white_color;
+            margin: 0 0 10px 0;
+        }
+        .link{
+            color: white;
+            margin: 0 0 10px 0;
+            &:hover{
+                text-decoration: underline solid;
+            }
+        }
+    }
+    .icon-pay{
+        font-size: 2em;
+        margin: 0 20px 0 0;
+        &:hover{
+            color: $red_color;
+        }
+    }
+}

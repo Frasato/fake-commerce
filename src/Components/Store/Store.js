@@ -21,7 +21,7 @@ export default function Store(){
                 products.map((items, index)=>{
                     return(
                         <div key={index} className="product-card">
-                            <img src={items.image} alt="Product Image"/>
+                            <img src={items.image} alt="Product"/>
                             <h1>{items.title}</h1>
                             <div>
                                 <h2>${items.price}</h2>
