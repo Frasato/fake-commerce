@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import '../../Styles/store.scss';
 
-export default function Store(){
+export default function Store(props){
     const [products, setProducts] = useState([]);
 
     useEffect(()=>{
@@ -25,7 +25,7 @@ export default function Store(){
                             <h1>{items.title}</h1>
                             <div>
                                 <h2>${items.price}</h2>
-                                <button>Buy</button>
+                                <button onClick={props.incrementCart}>Buy</button>
                             </div>
                         </div>
                     );

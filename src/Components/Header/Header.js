@@ -3,7 +3,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { IoPersonCircle } from "react-icons/io5";
 import '../../Styles/header.scss';
 
-export default function Header(){
+export default function Header(props){
     return(
         <header>
             <h1>Fake Commerce</h1>
@@ -14,7 +14,7 @@ export default function Header(){
             </div>
             <div>
                 <FaCartShopping className="navigation-icons"/>
-                <span>10</span>
+                <span>{props.cartItems}</span>
                 <IoPersonCircle className="navigation-icons"/>
             </div>
         </header>
