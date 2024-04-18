@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import '../../Styles/banner.scss';
 
 export default function Banner(){
     return(
-        <div>
-            <h1>The Bigest Store in The World!</h1>
+        <div className="banner-container">
+            <h1>The Biggest Store in The World!</h1>
             <h2>Find all you want for a low price!</h2>
-            <Link to="/store">See Store</Link>
+            <Link to="/store" className="link">See Store</Link>
         </div>
     );
 }

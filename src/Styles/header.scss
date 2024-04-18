@@ -1,0 +1,36 @@
+$green_color: #044040;
+$red_color: #D92525;
+$white_color: #F2F2F2;
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+
+    h1{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: $green_color;
+    }
+    .navegation-link{
+        margin: 0 30px;
+        color: $green_color;
+        &:hover{
+            text-decoration: underline solid;
+        }
+    }
+    .navigation-icons{
+        margin: 0 20px;
+        font-size: 20px;
+    }
+    span{
+        position: absolute;
+        color: $red_color;
+        font-size: 1em;
+        font-weight: 700;
+        left: 1370px;
+        top: 30px;
+    }
+}
