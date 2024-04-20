@@ -13,7 +13,7 @@ export default function Header(props){
                 <Link to="/contact" className="navegation-link">Contact Us</Link>
             </div>
             <div>
-                <Link to="/cart"><FaCartShopping className="navigation-icons"/></Link>
+                <Link to="/cart" className="navigation-icons"><FaCartShopping/></Link>
                 <span>{props.cartItems}</span>
                 <IoPersonCircle className="navigation-icons"/>
             </div>
