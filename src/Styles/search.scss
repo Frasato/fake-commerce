@@ -1,0 +1,22 @@
+$green_color: #044040;
+$red_color: #D92525;
+$white_color: #F2F2F2;
+$grey_shadow: #c9c9c9;
+
+.container-search{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    input{
+        width: 50vw;
+        height: 50px;
+        padding: 10px;
+        box-shadow: 5px 5px 20px $white_color;
+        border-radius: 10px;
+        &:focus{
+            border: 1px solid $white_color;
+            box-shadow: 5px 5px 20px $grey_shadow;
+        }
+    }
+}
