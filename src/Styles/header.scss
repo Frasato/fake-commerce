@@ -25,12 +25,15 @@ header{
         margin: 0 20px;
         font-size: 20px;
     }
-    span{
-        position: absolute;
-        color: $red_color;
-        font-size: 1em;
-        font-weight: 700;
-        left: 1370px;
-        top: 30px;
+    div{
+        position: relative;
+        span{
+            position: absolute;
+            color: $red_color;
+            font-size: 1em;
+            font-weight: 700;
+            left: 45px;
+            top: 10px;
+        }
     }
 }

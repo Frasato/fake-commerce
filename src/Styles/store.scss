@@ -1,10 +1,11 @@
 $green_color: #044040;
 $red_color: #D92525;
 $white_color: #F2F2F2;
+$grey_shadow: #c9c9c9;
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
     text-align: center;
     padding: 50px 0;
@@ -18,10 +19,11 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         box-shadow: 5px 5px 20px $white_color;
         img{
             width: 100px;
+            aspect-ratio: 1/1;
         }
         h1{
             margin: 40px 0;
@@ -41,9 +43,12 @@ main{
                 border-radius: 10px;
                 cursor: pointer;
                 &:hover{
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                 }
             }
+        }
+        &:hover{
+            box-shadow: 7px 7px 20px $grey_shadow;
         }
     }
 }

@@ -12,6 +12,7 @@ $white_color: #F2F2F2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     h1{
         color: $red_color;
         font-size: 5em;
@@ -28,7 +29,7 @@ $white_color: #F2F2F2;
         padding: 10px 20px;
         border-radius: 10px;
         &:hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
 }
