@@ -1,17 +1,9 @@
-import { useState } from 'react';
 import '../../Styles/search.scss';
 
-export default function Search(){
-
-    const [searchValue, setSearchValue] = useState('');
-
-    function handleSearch(event){
-        setSearchValue(event.target.value);
-    }
-
+export default function Search(props){
     return(
         <div className="container-search">
-            <input type="text" value={searchValue} onChange={handleSearch} placeholder='Find what you want...'/>
+            <input type="text" value={props.valueField} onChange={props.searchFunction} placeholder='Find what you want...'/>
         </div>
     );
 }
