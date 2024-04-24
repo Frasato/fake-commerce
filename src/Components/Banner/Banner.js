@@ -3,7 +3,6 @@ import '../../Styles/banner.scss';
 import { useEffect, useState } from "react";
 
 export default function Banner(){
-
     const [titleBanner, setTitleBanner] = useState('');
 
     useEffect(()=>{

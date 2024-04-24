@@ -6,21 +6,16 @@ import { useState } from 'react';
 
 export default function StorePage(){
     const [cartItems, setCartItems] = useState(0);
-    const [ searchValue, setSearchValue] = useState('');
 
     function incrementCart(){
         let itemsCount = cartItems + 1;
         setCartItems(itemsCount);
     }
 
-    function handleSearch(event){
-        setSearchValue(event.target.value);
-    }
-
     return(
         <>
             <Header cartItems={cartItems}/>
-            <Search valueField={searchValue} searchFunction={handleSearch}/>
+            <Search />
             <Store incrementCart={incrementCart}/>
             <Footer />
         </>
